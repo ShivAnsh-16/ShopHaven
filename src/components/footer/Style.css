@@ -1,0 +1,127 @@
+footer{
+    background: rgb(67,13,89);
+    color: #ffffff;
+}
+footer h1{
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color:white;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-size: 35px;
+}
+footer p{
+  font-size: 13px;
+  margin-bottom: 30px;
+  font-weight: lighter;
+  font-family: cursive;
+}
+.icons{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+.icons i{
+    font-size: 25px;
+    margin: 10px auto;
+    margin-top: 20px;
+}
+footer .box{
+    margin: 50px 10px;
+}
+footer .btn{
+    padding:  10px 25px;
+    margin: 10px 10px;
+    background-color: #124a8f;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+footer .btn:hover{
+    background-color: #1657a7;
+}
+footer .btn i{
+    margin: 0 5px;
+}
+footer h3{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+footer ul li{
+    font-weight: 300;
+    margin: 15px 0;
+    font-size: 15px;
+}
+footer .link{
+    margin: 15px 0;
+    font-family: cursive;
+}
+footer .link i{
+    font-size: 20px;
+    margin: 0 5px;
+}
+footer .link span{
+    font-size: 15px;
+}
+footer .sponsor{
+    margin: 10px 0;
+}
+footer .sponsor i{
+    font-size: 35px;
+    padding: 20px ;
+}
+
+
+@media (max-width:712px) {
+   footer .icons{
+        width: 100%;
+        margin: auto;
+    }
+    footer .icons i{
+        font-size: 15px;
+    }
+    footer .box{
+        margin: 5px 5px;
+    }
+    footer h1{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    footer p{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    footer .btn{
+        width: 100%;
+        padding: 5px 8px;
+       font-size: 10px;
+        margin: 5px auto;
+    }
+     footer .sponsor{
+         margin: 5px 5px;
+        }
+        footer .sponsor i{
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+    footer h3{
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    footer ul li{
+        margin: 10px 0;
+        font-size: 10px;
+    }
+    footer .link{
+        margin: 10px 0;
+    }
+    footer .link i{
+        font-size: 15px;
+    }
+    footer .link span{
+        font-size: 10px;
+    }
+}

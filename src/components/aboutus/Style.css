@@ -1,0 +1,23 @@
+.aboutus{
+    text-align: center;
+}
+.aboutus .product{
+    padding: 30px;
+}
+.aboutus .product h3{
+    font-weight: bold;
+}
+.aboutus .product p{
+    font-size: 15px;
+    margin-top: 20px;
+    color: var(--grey);
+}
+.aboutus .img {
+    margin-bottom: 20px;
+}
+.aboutus .img i{
+    font-size: 30px;
+    padding: 10px 10px 0 10px ;
+    background-color: var(--grey-colour);
+    border-radius: 50%;
+}

@@ -1,0 +1,20 @@
+.heading img {
+  width: 100px;
+  height: 100px;
+}
+
+.newarrivals h4 {
+  font-weight: 400;
+}
+
+.newarrivals span {
+  color: red;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.newarrivals .box img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=Style.css.map */

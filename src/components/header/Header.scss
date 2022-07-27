@@ -1,0 +1,207 @@
+.navlink{
+    .nav{
+        li{
+            margin-left:2rem ;
+            font-weight: bold;
+        }
+    }
+}
+
+.search{
+    margin: 20px 0;
+    align-items: center;
+    position: sticky !important;
+    .search-bar{
+        display: grid;
+        grid-template-columns: 1.3fr 3fr 0.7fr;
+    }
+    .logo{
+        grid-column: 1/2;
+        h1{
+            font-size: 2rem;
+        }
+    }
+    
+    .search-box{
+        grid-column: 2/3;
+       height: 45px;
+       border: 1px solid var(--colour);
+       border-radius: 4rem;
+       align-items: center;
+       .sicon{
+        margin: 12px;
+        font-size: 20px;
+        opacity: 0.5;
+        font-weight: bold;
+        color: var(--colour);
+       }
+       input{
+        width: 80%;
+        padding: 10px;
+        border: none;
+        outline: none;
+       }
+       ::placeholder{
+        font-size: 18px;
+
+       }
+       span{
+        width: 20%;
+        opacity: 0.5;
+        border-left: 2px solid rgba(0, 0, 0 ,0.5);
+        padding: 10px;
+        border-bottom-right-radius: 4rem;
+        border-top-right-radius: 4rem;
+       }
+    }
+    .cart{
+        position: relative;
+        align-items: center;
+        span{
+            position: absolute;
+            top: 0px;
+            right:15px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: red;
+            font-size: 10px;
+            color: var(--primary-colour);
+        }
+    }
+    .picon{
+        grid-column: 3/4;
+        align-items: center;
+        .carticon{
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            margin: 0 20px;
+            color: var(--colour);
+            cursor: pointer;
+        }
+        
+    }
+}
+.search .f-flex{
+    justify-content: end;
+}
+.header{
+    box-shadow: -1px 15px 17px -8px rgba(0, 0, 0 ,0.2);
+    ul{
+       display: flex;
+     li a{
+        transition: 0.5s;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    }
+    ul li a:hover {
+         color: var(--hover);
+    }
+}
+.hamburger-menu{
+    display: none;
+}
+
+
+@media ( max-width: 1350px ){
+    .header ul li a{
+        font-size: 13px;
+    }
+   .search{
+    .logo h1{
+        font-size: 30px;
+    }
+    .search-box {
+           height: 40px;
+        .sicon{
+            margin: auto;
+        }
+           input{
+               width: 55%;
+               margin: auto;
+            }
+            span{
+                width: auto; 
+                margin: auto;
+                padding: 0;
+                font-size: 13px;
+                font-weight: bold;
+            }
+        }
+    }
+    
+    .hamburger-menu{
+        display: none;
+    }
+}
+
+@media ( max-width: 1000px ){
+    .hidden{
+        display: none;
+     }
+    .header .nav{
+        position: absolute;
+        top: 12rem;
+        right: 5%;
+        flex-direction: column;
+        width: 90%;
+        height: max-content;
+        background-color: var(--main-heading); 
+        text-align: center;
+        box-shadow: 1px 15px 17px 8px rgba(0, 0, 0 ,0.2);
+        z-index: 1;
+    }
+    .header .nav li {
+        margin: 5px auto;
+        padding: 5px 0;
+        width: 100%;
+        a{
+            margin: auto;
+            font-size: 15px;
+        }
+        align-items: center;
+        transition: all 1.5s ease;
+        cursor: pointer;
+    }
+    .header .nav li a:hover{
+        color: var(--hover);
+    }
+    .header .nav li:hover{
+        background-color: var(--grey-colour);
+    }
+    
+    .search{
+        .logo h1{
+            font-size: 25px;
+        }
+        .picon{
+            .carticon{
+                margin: 10px 10px;
+            }
+            
+        }
+        .cart span{
+            top: 1px;
+            right:5px;
+        }
+    }
+    .hamburger-menu{
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+@media ( max-width: 850px ){
+    .search{
+        margin: 10px 0;
+    }
+    .search-box{
+        display: none;
+        width: 0%;
+        height: 0%;
+    }
+}
